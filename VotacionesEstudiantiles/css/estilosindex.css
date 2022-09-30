@@ -1,0 +1,176 @@
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  /* Provide sufficient contrast against white background */
+  a {
+    color: #0366d6;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+  }
+  
+  /* Sticky footer styles
+  -------------------------------------------------- */
+  html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .border-top {
+    border-top: 1px solid #e5e5e5;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  }
+  
+  button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+  }
+  .button {
+    background-color: #56f879; /* Green */
+    border: none;
+    color: rgb(171, 33, 206);
+    padding: 0px 70px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 200px;
+    font-size: 25px;
+    margin: 0px 10px;
+    box-shadow: 0 9px #999;
+    -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button2 {
+    background-color: #56f879; /* Green */
+    border: none;
+    color: rgb(171, 33, 206);
+    padding: 0px 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 200px;
+    font-size: 25px;
+    margin: 0px 10px;
+    box-shadow: 0 9px #999;
+    -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button:hover {background-color: #45bd55}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .button2:hover {background-color: #3fca52}
+  
+  .button2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  /* Sticky footer styles
+  -------------------------------------------------- */
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    background-image: url("../img/fondo_app.jpg");
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+  }
+  
+  .admin-wrapper-form {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #63376A;
+  }
+  .form {
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 25px;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #d9d9d9,
+                 -20px -20px 60px #ffffff;
+  }
+  
+  .admin-btn {
+    background-color: #E4489C;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .4rem 1rem;
+    border-radius: 10px;
+    border: 0;
+    transition: .5s;
+    width: 120px;
+  }
+  
+  .admin-btn:hover{
+    width: 200px;
+    background-color: #20D0DF; 
+    transition: .3s;
+  }
+  
+  .admin-btn:active{
+    transform: scale(.8);
+  }
+  
+  .form h2 {
+    color: #63376A;
+    margin: 2rem 0;
+  }
+  .form h2 span {
+    font-weight: bold;
+    color: #20D0DF; 
+    /* color: #E4489C; */
+  }
+  .salir {
+      font-family: Arial;
+      border-radius: 10px;
+      height: 40px;
+      background-color: #1FD68D;
+      border: none;
+  }
