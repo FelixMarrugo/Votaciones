@@ -19,7 +19,7 @@ if($_SESSION['logueado']==TRUE)
             .buttons
             {
             width:400px; 
-            background-color:#E74798; 
+            background-color:#0B5ED7; 
             color:white;
             }
         </style>
@@ -93,12 +93,12 @@ if($_SESSION['logueado']==TRUE)
                 </div>
             </div>
         </div>
-                <div class="d-flex justify-content-between"style=" padding:50px;">
+                <div class="d-flex justify-content-between" style=" padding:50px;">
                     <a href="./index.php">
                         <button type="button" class=" salir buttons">Salir</button>
                     </a>
                 
-                    <a href="./resultadosVotaciones.php">
+                    <a href="./resultadosVotaciones_V.php">
                         <button type="button" class=" salir buttons" >Consultar Resultados</button>
                     </a>
                 </div>

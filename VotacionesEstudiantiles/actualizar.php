@@ -62,13 +62,24 @@ if($_SESSION['logueado']==TRUE)
             
             <form action="update.php" method="post" class="form">
                 <h2>ACTUALIZAR DATOS</h2>
-                <!-- <label for="" style="padding:0px 10px;">ID</label> -->
+                <label for="" style="padding:0px 10px;">ID</label>
                     <input type="text" class = "form-control mb-3" name = "id" value = "<?php echo $datos['id']?>" readonly>
-                <!-- <label for="" style="padding:0px 10px;">Usuario</label> -->
+                <label for="" style="padding:0px 10px;">Usuario</label>
                     <input type="text" class = "form-control mb-3" name = "usuario" value = "<?php echo $datos['usuario']?>">
-                <!-- <label for="" style="padding:0px 10px;">Password</label> -->
+                <label for="" style="padding:0px 10px;">Contraseña</label>
                     <input type="password" class = "form-control mb-3" name = "pw" value = "<?php echo $datos['pass']?>">
-                <!-- <label for="" style="padding:0px 10px;">Rol</label> -->
+                
+                    <?php
+                    if($datos['rol']=="Votante")
+                    {
+                        ?>
+                        <label for="" style="padding:0px 10px;">Grado</label>
+                        <input type="text" class = "form-control mb-3" name = "grado" value = "<?php echo $datos['grado']?>">
+                        <?php
+                    }
+                    ?>
+                    
+                <label for="" style="padding:0px 10px;">Rol</label>
                     <input type="text" class = "form-control mb-3" name = "rol" value = "<?php echo $datos['rol']?>">
                 <button class="btn btn-primary" onclick="location.href='update.php?id=<?php echo $datos['id'] ?>'">Actualizar</button>
             </form>

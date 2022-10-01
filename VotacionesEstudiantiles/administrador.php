@@ -25,6 +25,13 @@ if($_SESSION['logueado']==TRUE)
                 background-color: #252525;
                 
             }
+            .buttons
+            {
+            width:400px; 
+            background-color:#0B5ED7; 
+            color:white;
+            }
+
         </style>
     </head>
     <body>
@@ -42,9 +49,7 @@ if($_SESSION['logueado']==TRUE)
                     <li class="nav-item">
                         <a class="nav-link" href="./administrador.php">ADMINISTRADOR</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./resultadosVotaciones.php">RESULTADOS</a>
-                    </li>
+
                 </ul>
                 <div class="d-flex justify-content-end">
                     <div class="d-flex flex-row align-items-end" style="padding:0px 40px;">
@@ -59,11 +64,13 @@ if($_SESSION['logueado']==TRUE)
             <!-- BODY-->
            <div class="container p-3">
                 <div class="row justify-content-between">
-                    <div class="col-3 col-mb-3 shadow p-3 mb-5 rounded">
+                    <div class="col-3 col-mb-3 shadow p-3 mb-5 rounded ">
                             <form action="insertar.php" method = "POST">
                             <h3 class = "text-center">Crear usuario</h3>
                                 <input type="text" class="form-control mb-3" name="usuario" id = "usuario" placeholder="Usuario">
                                 <input type="password" class="form-control mb-3" name="pw" id = "pw" placeholder="Contraseña">
+                                <input type="text" class="form-control mb-3" name="grado" id = "grado" placeholder="Grado">
+
                                 <select class="form-select mb-3" name = "rol" id = "rol">
                                     <option></option>
                                     <option value="Administrador">Administrador</option>
@@ -82,6 +89,7 @@ if($_SESSION['logueado']==TRUE)
                                     <th>Nombre</th>
                                     <th>Contraseña</th>
                                     <th>Rol</th>
+                                    <th>Grado</th>
                                     <th style="border-radius:0px 10px 0px 0px;">Modificadores</th>
                                 </tr>
                             </thead>
@@ -100,6 +108,7 @@ if($_SESSION['logueado']==TRUE)
                                             <td><?php echo $datos['usuario']?></td>
                                             <td><?php echo $datos['pass']?></td>
                                             <td><?php echo $datos['rol']?></td>
+                                            <td><?php echo $datos['grado']?></td>
                                             <td>
                                                 <a href="actualizar.php?id= <?php echo $datos['id']?>" class = "btn btn-info">Editar</a>
                                                 <a href="eliminar.php?id= <?php echo $datos['id']?>" class = "btn btn-danger" style="background-color:#E8459C;">Eliminar</a>
@@ -112,6 +121,11 @@ if($_SESSION['logueado']==TRUE)
                             </tbody>
                             </div>
                         </table>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                    <a href="./resultadosVotaciones_A.php">
+                        <button type="button" class="salir buttons" style="margin-top:-15px;">Consultar Resultados</button>
+                    </a>
                     </div>
                 </div>
         </body>

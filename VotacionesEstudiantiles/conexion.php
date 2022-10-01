@@ -2,7 +2,7 @@
 
 $servidor = "localhost";
 $user = "root";
-$pw = "f3l1xjun10r";
+$pw = "";
 $db = "VotacionesEstudiantiles";
 
 $mysqli = new mysqli($servidor, $user, $pw, $db);

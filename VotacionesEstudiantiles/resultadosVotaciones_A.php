@@ -25,6 +25,16 @@ if($_SESSION['logueado']==TRUE)
                 background-color: #252525;
                 
             }
+            .buttons
+            {
+            width:400px; 
+            background-color:#0B5ED7; 
+            color:white;
+            }
+            .table-resultados
+            {
+                padding:20px 0px; background-color:#D1E7DD; border-radius:20px; border:1px solid #000000;
+            }
         </style>
     </head>
     <body>
@@ -40,7 +50,7 @@ if($_SESSION['logueado']==TRUE)
                         <a class="nav-link active" aria-current="page" href="#">AÑO 2023</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./administrador.php">ADMINISTRADOR</a>
+                    <a class="nav-link" href="./administrador.php">ADMINISTRADOR</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./resultadosVotaciones.php">RESULTADOS</a>
@@ -59,21 +69,21 @@ if($_SESSION['logueado']==TRUE)
             <!-- BODY-->
             
             <div class="row text-center justify-content-center">
-                <div class="col-8">
-                    <h1 class="text-end display-6">Resultados</h1>
+                <div class="col-8 mt-2 table-resultados" >
+                    <h1 class="text-center display-6" style="color:#63396C;"><strong> RESULTADOS VOTACIONES</strong></h1>
                     <table class="table table-success" >
                         <thead>
                             <tr >
-                                <th scope="col" style="border-radius:10px 0px 0px 0px;">id</th>
+                                <th scope="col" style="border-radius:10px 0px 0px 0px;">Id</th>
                                 <th scope="col">Usuario</th>
-                                <th scope="col">Grados</th>
+                                <th scope="col">Grado</th>
                                 <th scope="col" style="border-radius:0px 10px 0px 0px;">Votos</th>
                             </tr>
                         </thead>
                         <tbody>
                         <?php
                             include("conexion.php");
-                            $sql = mysqli_query($mysqli, "SELECT * FROM usuarios WHERE votos != 'null' and grado != 'null'")
+                            $sql = mysqli_query($mysqli, "SELECT * FROM usuarios WHERE votos != 'NULL' and grado != 'NULL'")
                             or die ("Error al conectarse a la base de datos");
                             while($datos = mysqli_fetch_array($sql))
                             {
@@ -94,7 +104,11 @@ if($_SESSION['logueado']==TRUE)
                     </table>
                 </div>
             </div>
-            
+            <div class="d-flex justify-content-center mt-4">
+                <a href="./administrador.php">
+                        <button type="button" class=" salir buttons" >Volver</button>
+                </a>
+            </div>
         </body>
     </html>
 <?php
