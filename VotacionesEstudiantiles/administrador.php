@@ -40,7 +40,10 @@ if($_SESSION['logueado']==TRUE)
                     <a class="nav-link active" aria-current="page" href="#">AÑO 2023</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">ADMINISTRADOR</a>
+                        <a class="nav-link" href="./administrador.php">ADMINISTRADOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./resultadosVotaciones.php">RESULTADOS</a>
                     </li>
                 </ul>
                 <div class="d-flex justify-content-end">
