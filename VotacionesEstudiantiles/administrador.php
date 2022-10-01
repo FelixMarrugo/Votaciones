@@ -30,7 +30,7 @@ if($_SESSION['logueado']==TRUE)
     <body>
         <nav class="navbar navbar-expand-lg" style="background-color: #28C8D9;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">COLEGIO SANTA BARBARA</a>
+                <a class="navbar-brand" href="./index.php">COLEGIO SANTA BARBARA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -77,7 +77,7 @@ if($_SESSION['logueado']==TRUE)
                                 <tr>
                                     <th style="border-radius:10px 0px 0px 0px;">Código</th>
                                     <th>Nombre</th>
-                                    <th>Password</th>
+                                    <th>Contraseña</th>
                                     <th>Rol</th>
                                     <th style="border-radius:0px 10px 0px 0px;">Modificadores</th>
                                 </tr>

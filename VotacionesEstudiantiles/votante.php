@@ -14,20 +14,26 @@ if($_SESSION['logueado']==TRUE)
         <title>Panel Votante</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="js/bootstrap.min.js">
-        
         <link rel="stylesheet" href="./css/estilosindex.css">
-
+        <style>
+            .buttons
+            {
+            width:400px; 
+            background-color:#E74798; 
+            color:white;
+            }
+        </style>
 
     </head>
     <body>
 
     <nav class="navbar navbar-expand-lg" style="background-color: #28C8D9;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">COLEGIO SANTA BARBARA</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.php">COLEGIO SANTA BARBARA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">AÑO 2023</a>
@@ -42,15 +48,15 @@ if($_SESSION['logueado']==TRUE)
                         <a href="cerrar_sesion.php" class="btn btn-danger" style="background-color:#E74798;"> Cerrar Sesion</a>
                     </div>
                 </div>
-                </div>
             </div>
-        </nav>
+        </div>
+    </nav>
             
 <!-- Diseño del tarjeton -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col">
-            <div class="card" style="width: 250px;">
+            <div class="card" style="width: 250px; margin-top:15px;">
                 <button class="btn"> <img src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=220" style="width: 150px;" class="card-img-top" alt="..."> </button>
                 <div class="card-body">
                     <h5 class="card-title">Nombre del Candidato</h5>
@@ -87,15 +93,17 @@ if($_SESSION['logueado']==TRUE)
                 </div>
             </div>
         </div>
-                <div style="padding:50px;">
+                <div class="d-flex justify-content-between"style=" padding:50px;">
                     <a href="./index.php">
-                        <button type="button" class="salir" style="width: 40%; margin-left: 250px;">Salir</button>
+                        <button type="button" class=" salir buttons">Salir</button>
+                    </a>
+                
+                    <a href="./resultadosVotaciones.php">
+                        <button type="button" class=" salir buttons" >Consultar Resultados</button>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-</div>
         
     </body>
     </html>
